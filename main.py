@@ -47,7 +47,7 @@ class PokeAttack(Star):
                 
                 # 确定戳一戳的次数 (有感叹号会触发更多戳戳)
                 if re.match(rf'^{keyword}(！|!)$', message_str):
-                        poke_times = 5
+                        poke_times = random.randint(5, 10)
                 else:
                     poke_times = random.randint(1, 3)
 
